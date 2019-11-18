@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="C:\Users\Administrator\Desktop\css\asstes\yp_Query-UI\yp-Query-navbar.css">
+  <style>
+    body{
+      margin: 0;
+
+    }
+.navbar{
+height: 52.5px;
+background-color: red;
+}
+html{
+  line-height: 53px;
+  
+}
+li{
+  list-style-type:none;
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+}
+.navbar-header{
+  float: left;
+  line-height: 3.125rem;
+}
+.navbar-header::after{
+  content: "";
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.navbar>.navbar-header>.navbar-logo{
+  float: left;
+  
+}
+.navbar>.navbar-header>.navbar-logo::after{
+content: "";
+clear: both;
+visibility: hidden;
+display: block;
+}
+.navbar>.navbar-header a{
+    font-size: 25px;
+    padding: 7px;
+    text-decoration: none;
+}
+.collapse{
+  display: none;
+}
+
+  /* 默认
+  width  100%=  100 rem
+  */
+.navbar .navbar-nav{
+  float: left;
+  min-width: 30rem;
+  width: 30rem;
+}
+.navbar .navbar-nav::after{
+  content: "";
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.navbar>.navbar-collapse>.navbar-nav>.nav{
+  margin: 0;
+  
+  
+}
+.navbar>.navbar-collapse>.navbar-nav>.nav a{
+  line-height: 1.6rem;
+
+}
+.navbar-form-control{
+  float: left;
+  
+}
+.navbar-form-control::after{
+  content: "";
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.navbar-form>input{
+  padding: 3px 5px;
+}
+.navbar-form-control{
+  border: 1px solid #ccc; 
+   padding-left: 5px;
+   background-color: #ccc;
+   border: none;
+}
+.navbar-form-control>.btn{
+  margin-left: -5x;
+  
+}
+.navbar-form-control>input{
+  background-color: #ccc;
+  padding: 0px 10px ;
+}
+.navbar>.navbar-collapse>.navbar-right{
+  float: right;
+  
+}
+.navbar>.navbar-collapse>.navbar-right::after{
+  content: "";
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.navbar>.navbar-collapse>.navbar-right>.nav{
+  margin: 0;
+}
+/* @media表示媒体查询
+screen 表示媒体设备 手机 平板 电脑 */
+@media screen and (max-width:798px){
+  .navbar-header .collapse{
+    display: block;
+  }
+  .navbar-header{
+    width: 100%;
+     
+  }
+  .navbar-collapse{
+    display: none;
+    position: relative;
+
+  }
+
+  .navbar-header .navbar-toggle{
+    float: right;
+    width: 32px;
+    height: 30px;
+    border: 1px solid #ccc;
+    position:relative;
+    top: 10px;
+    right: 10px;
+  }
+  .navbar-header>.navbar-toggle::after{
+    content: "";
+    clear: both;
+    visibility: hidden;
+    display: block;
+  }
+  .navbar .navbar-collapse{
+    position: relative;
+    
+  }
+  .navbar-header>.navbar-toggle>.icon-line{
+    width: 22px;
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    display: inline-block;
+  }
+  .navbar-header>.navbar-toggle>.icon-line::before{
+    width: 22px;
+    content: "";
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    display: inline-block;
+  }
+  .navbar-header>.navbar-toggle>.icon-line::after{
+    width: 22px;
+    content: "";
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    display: inline-block;
+  }
+  
+
+
+  .navbar-collapse >.navbar-nav>.nav{
+                border-top: 1px solid #ccc;
+            }
+            .navbar-collapse .nav>li{
+                width: 100%;
+            }
+            .navbar-collapse,.navbar-right{
+                width: 100%;
+            }
+
+            .navbar-collapse>.navbar-form{
+                margin-left: 20px;
+            }
+
+}
+ 
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-header">
+      <!-- 点击logo进入首页 -->
+      <div class="navbar-logo">
+        <a href="#">logo</a>
+      </div>
+      <div class="navbar-toggle" collpase>
+        <span class="icon-line"></span>
+      </div>
+  </div>
+  <div class="navbar-collapse">
+    <div class="navbar-nav">
+      <ul class="nav">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <!-- <li>
+          <a href="#"></a>
+        </li> -->
+      </ul>
+    </div>
+    <form class="navbar-from">
+      <div class="navbar-form-control"> 
+        <input type="text" class="form-control">
+        <button class="btn">搜索</button>
+      </div>
+     </form>
+    <div class="navbar-right">
+      <ul class="nav">
+        <li><a href="#">LLink</a></li>
+        <li><a href="#">LLink</a></li>
+      </ul>
+
+    </div>
+  </div>
+  </nav>
+  
+  
+</body>
+</html>
